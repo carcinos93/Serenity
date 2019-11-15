@@ -603,7 +603,7 @@ declare namespace Serene1.CLIN {
         Label: Serenity.StringEditor;
         Mascara: Serenity.StringEditor;
         Longitud: Serenity.IntegerEditor;
-        Tipo: Serenity.EnumEditor;
+        Tipo: Serenity.StringEditor;
         Catalogo: Serenity.StringEditor;
         Activo: Serenity.BooleanEditor;
     }
@@ -617,11 +617,12 @@ declare namespace Serene1.CLIN {
     interface AppCamposRow {
         Id?: number;
         IdFormulario?: string;
+        NombreFormulario?: string;
         Campo?: string;
         Label?: string;
         Mascara?: string;
         Longitud?: number;
-        Tipo?: TipoControles;
+        Tipo?: string;
         Catalogo?: string;
         Activo?: boolean;
         CreadoPor?: string;
@@ -636,6 +637,7 @@ declare namespace Serene1.CLIN {
         const enum Fields {
             Id = "Id",
             IdFormulario = "IdFormulario",
+            NombreFormulario = "NombreFormulario",
             Campo = "Campo",
             Label = "Label",
             Mascara = "Mascara",
@@ -1398,14 +1400,6 @@ declare namespace Serene1.CLIN {
             Retrieve = "CLIN/Tablas/Retrieve",
             List = "CLIN/Tablas/List"
         }
-    }
-}
-declare namespace Serene1.CLIN {
-    enum TipoControles {
-        text = 1,
-        date = 2,
-        dropdown = 3,
-        numeric = 4
     }
 }
 declare namespace Serene1.Common {

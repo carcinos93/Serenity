@@ -88,6 +88,13 @@ namespace Serene1.CLIN.Entities
             set { Fields.Activo[this] = value; }
         }
 
+        [DisplayName("Orden"), Column("ORDEN")]
+        public Int32? Orden
+        {
+            get { return Fields.Orden[this]; }
+            set { Fields.Orden[this] = value; }
+        }
+
         [DisplayName("Creado Por"), Column("CREADO_POR"), Size(50)]
         public String CreadoPor
         {
@@ -145,6 +152,7 @@ namespace Serene1.CLIN.Entities
             public StringField Tipo;
             public StringField Catalogo;
             public BooleanField Activo;
+            public Int32Field Orden;
             public StringField CreadoPor;
             public DateTimeField FechaCreacion;
             public StringField ModificadoPor;

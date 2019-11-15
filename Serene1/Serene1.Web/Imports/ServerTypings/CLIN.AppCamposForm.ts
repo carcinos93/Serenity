@@ -5,7 +5,7 @@
         Label: Serenity.StringEditor;
         Mascara: Serenity.StringEditor;
         Longitud: Serenity.IntegerEditor;
-        Tipo: Serenity.EnumEditor;
+        Tipo: Serenity.StringEditor;
         Catalogo: Serenity.StringEditor;
         Activo: Serenity.BooleanEditor;
     }
@@ -24,8 +24,7 @@
                 var w0 = s.LookupEditor;
                 var w1 = s.StringEditor;
                 var w2 = s.IntegerEditor;
-                var w3 = s.EnumEditor;
-                var w4 = s.BooleanEditor;
+                var w3 = s.BooleanEditor;
 
                 Q.initFormType(AppCamposForm, [
                     'IdFormulario', w0,
@@ -33,9 +32,9 @@
                     'Label', w1,
                     'Mascara', w1,
                     'Longitud', w2,
-                    'Tipo', w3,
+                    'Tipo', w1,
                     'Catalogo', w1,
-                    'Activo', w4
+                    'Activo', w3
                 ]);
             }
         }

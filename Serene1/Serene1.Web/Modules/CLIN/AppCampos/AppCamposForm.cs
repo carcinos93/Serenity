@@ -22,5 +22,7 @@ namespace Serene1.CLIN.Forms
         public String Tipo { get; set; }
         public String Catalogo { get; set; }
         public Boolean Activo { get; set; }
+        [IntegerEditor]
+        public Int32 Orden { get; set; }
     }
 }

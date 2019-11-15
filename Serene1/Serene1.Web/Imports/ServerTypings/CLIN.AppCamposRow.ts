@@ -2,11 +2,12 @@
     export interface AppCamposRow {
         Id?: number;
         IdFormulario?: string;
+        NombreFormulario?: string;
         Campo?: string;
         Label?: string;
         Mascara?: string;
         Longitud?: number;
-        Tipo?: TipoControles;
+        Tipo?: string;
         Catalogo?: string;
         Activo?: boolean;
         CreadoPor?: string;
@@ -23,6 +24,7 @@
         export declare const enum Fields {
             Id = "Id",
             IdFormulario = "IdFormulario",
+            NombreFormulario = "NombreFormulario",
             Campo = "Campo",
             Label = "Label",
             Mascara = "Mascara",

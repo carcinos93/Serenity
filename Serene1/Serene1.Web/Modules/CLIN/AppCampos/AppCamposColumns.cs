@@ -24,9 +24,8 @@ namespace Serene1.CLIN.Columns
         public String Tipo { get; set; }
         public String Catalogo { get; set; }
         public Boolean Activo { get; set; }
-        public String CreadoPor { get; set; }
-        public DateTime FechaCreacion { get; set; }
-        public String ModificadoPor { get; set; }
-        public DateTime FechaModificacion { get; set; }
+       
+        public Int32 Orden { get; set; }
+
     }
 }
